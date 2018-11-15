@@ -1,0 +1,13 @@
+# Target labels
+ c-ares
+# Source files and their labels
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/c-ares
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/c-ares.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/c-ares-complete.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-stamp/c-ares-install.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-stamp/c-ares-mkdir.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-stamp/c-ares-download.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-stamp/c-ares-update.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-stamp/c-ares-patch.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-stamp/c-ares-configure.rule
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-stamp/c-ares-build.rule

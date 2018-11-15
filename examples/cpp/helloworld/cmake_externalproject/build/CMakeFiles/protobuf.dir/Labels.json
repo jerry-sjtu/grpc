@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/protobuf"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/protobuf.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/protobuf-complete.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/protobuf/src/protobuf-stamp/protobuf-install.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/protobuf/src/protobuf-stamp/protobuf-mkdir.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/protobuf/src/protobuf-stamp/protobuf-download.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/protobuf/src/protobuf-stamp/protobuf-update.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/protobuf/src/protobuf-stamp/protobuf-patch.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/protobuf/src/protobuf-stamp/protobuf-configure.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/protobuf/src/protobuf-stamp/protobuf-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"protobuf"
+		],
+		"name" : "protobuf"
+	}
+}

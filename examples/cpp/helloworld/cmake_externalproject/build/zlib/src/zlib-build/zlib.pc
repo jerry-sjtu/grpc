@@ -1,0 +1,13 @@
+prefix=/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib
+exec_prefix=/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib
+libdir=/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/lib
+sharedlibdir=/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/lib
+includedir=/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

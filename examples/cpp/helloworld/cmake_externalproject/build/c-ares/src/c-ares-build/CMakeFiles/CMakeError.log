@@ -1,0 +1,885 @@
+Performing C SOURCE FILE Test IOS failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0ecd3/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0ecd3.dir/build.make CMakeFiles/cmTC_0ecd3.dir/build
+Building C object CMakeFiles/cmTC_0ecd3.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DIOS   -o CMakeFiles/cmTC_0ecd3.dir/src.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/src.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/src.c:6:2: error: Not an iPhone target
+#error Not an iPhone target
+ ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_0ecd3.dir/src.c.o] Error 1
+make[3]: *** [cmTC_0ecd3/fast] Error 2
+
+Source file was:
+
+	#include <stdio.h>
+	#include <TargetConditionals.h>
+	int main() {
+#if TARGET_OS_IPHONE == 0
+#error Not an iPhone target
+#endif
+return 0;
+	}
+	
+Performing C SOURCE FILE Test IOS_V10 failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ac950/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_ac950.dir/build.make CMakeFiles/cmTC_ac950.dir/build
+Building C object CMakeFiles/cmTC_ac950.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DIOS_V10   -o CMakeFiles/cmTC_ac950.dir/src.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/src.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/src.c:6:4: error: Not iOS v10
+#  error Not iOS v10
+   ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_ac950.dir/src.c.o] Error 1
+make[3]: *** [cmTC_ac950/fast] Error 2
+
+Source file was:
+
+#include <stdio.h>
+#include <TargetConditionals.h>
+	int main() {
+#if TARGET_OS_IPHONE == 0 || __IPHONE_OS_VERSION_MIN_REQUIRED < 100000
+#  error Not iOS v10
+#endif
+return 0;
+	}
+	
+Determining if the function gethostbyname exists in the nsl failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f8cea/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f8cea.dir/build.make CMakeFiles/cmTC_f8cea.dir/build
+Building C object CMakeFiles/cmTC_f8cea.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_f8cea.dir/CheckFunctionExists.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f8cea
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8cea.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/Users/qiangwang/homebrew/opt/llvm/lib  CMakeFiles/cmTC_f8cea.dir/CheckFunctionExists.c.o  -o cmTC_f8cea -lnsl 
+ld: library not found for -lnsl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[4]: *** [cmTC_f8cea] Error 1
+make[3]: *** [cmTC_f8cea/fast] Error 2
+
+
+Determining if the function gethostbyname exists in the socket failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29cf1/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_29cf1.dir/build.make CMakeFiles/cmTC_29cf1.dir/build
+Building C object CMakeFiles/cmTC_29cf1.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_29cf1.dir/CheckFunctionExists.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_29cf1
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29cf1.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/Users/qiangwang/homebrew/opt/llvm/lib  CMakeFiles/cmTC_29cf1.dir/CheckFunctionExists.c.o  -o cmTC_29cf1 -lsocket 
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[4]: *** [cmTC_29cf1] Error 1
+make[3]: *** [cmTC_29cf1/fast] Error 2
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76a90/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_76a90.dir/build.make CMakeFiles/cmTC_76a90.dir/build
+Building C object CMakeFiles/cmTC_76a90.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_76a90.dir/CheckFunctionExists.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_76a90
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76a90.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clock_gettime -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/Users/qiangwang/homebrew/opt/llvm/lib  CMakeFiles/cmTC_76a90.dir/CheckFunctionExists.c.o  -o cmTC_76a90 -lrt 
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[4]: *** [cmTC_76a90] Error 1
+make[3]: *** [cmTC_76a90/fast] Error 2
+
+
+Determining if files malloc.h exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_505c2/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_505c2.dir/build.make CMakeFiles/cmTC_505c2.dir/build
+Building C object CMakeFiles/cmTC_505c2.dir/HAVE_MALLOC_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_505c2.dir/HAVE_MALLOC_H.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_MALLOC_H.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_MALLOC_H.c:2:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_505c2.dir/HAVE_MALLOC_H.c.o] Error 1
+make[3]: *** [cmTC_505c2/fast] Error 2
+
+Source:
+/* */
+#include <malloc.h>
+
+
+int main(void){return 0;}
+
+Determining if files socket.h exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4bad/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f4bad.dir/build.make CMakeFiles/cmTC_f4bad.dir/build
+Building C object CMakeFiles/cmTC_f4bad.dir/HAVE_SOCKET_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_f4bad.dir/HAVE_SOCKET_H.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_SOCKET_H.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_SOCKET_H.c:2:10: fatal error: 'socket.h' file not found
+#include <socket.h>
+         ^~~~~~~~~~
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_f4bad.dir/HAVE_SOCKET_H.c.o] Error 1
+make[3]: *** [cmTC_f4bad/fast] Error 2
+
+Source:
+/* */
+#include <socket.h>
+
+
+int main(void){return 0;}
+
+Determining if files stropts.h exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c7128/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c7128.dir/build.make CMakeFiles/cmTC_c7128.dir/build
+Building C object CMakeFiles/cmTC_c7128.dir/HAVE_STROPTS_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_c7128.dir/HAVE_STROPTS_H.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:2:10: fatal error: 'stropts.h' file not found
+#include <stropts.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_c7128.dir/HAVE_STROPTS_H.c.o] Error 1
+make[3]: *** [cmTC_c7128/fast] Error 2
+
+Source:
+/* */
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files winsock2.h;windows.h exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7a777/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_7a777.dir/build.make CMakeFiles/cmTC_7a777.dir/build
+Building C object CMakeFiles/cmTC_7a777.dir/HAVE_WINSOCK2_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_7a777.dir/HAVE_WINSOCK2_H.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WINSOCK2_H.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WINSOCK2_H.c:2:10: fatal error: 'winsock2.h' file not found
+#include <winsock2.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_7a777.dir/HAVE_WINSOCK2_H.c.o] Error 1
+make[3]: *** [cmTC_7a777/fast] Error 2
+
+Source:
+/* */
+#include <winsock2.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files winsock2.h;ws2tcpip.h;windows.h exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_be6d9/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_be6d9.dir/build.make CMakeFiles/cmTC_be6d9.dir/build
+Building C object CMakeFiles/cmTC_be6d9.dir/HAVE_WS2TCPIP_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_be6d9.dir/HAVE_WS2TCPIP_H.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WS2TCPIP_H.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WS2TCPIP_H.c:2:10: fatal error: 'winsock2.h' file not found
+#include <winsock2.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_be6d9.dir/HAVE_WS2TCPIP_H.c.o] Error 1
+make[3]: *** [cmTC_be6d9/fast] Error 2
+
+Source:
+/* */
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files winsock.h;windows.h exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f8fd/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0f8fd.dir/build.make CMakeFiles/cmTC_0f8fd.dir/build
+Building C object CMakeFiles/cmTC_0f8fd.dir/HAVE_WINSOCK_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_0f8fd.dir/HAVE_WINSOCK_H.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WINSOCK_H.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WINSOCK_H.c:2:10: fatal error: 'winsock.h' file not found
+#include <winsock.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_0f8fd.dir/HAVE_WINSOCK_H.c.o] Error 1
+make[3]: *** [cmTC_0f8fd/fast] Error 2
+
+Source:
+/* */
+#include <winsock.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a8697/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a8697.dir/build.make CMakeFiles/cmTC_a8697.dir/build
+Building C object CMakeFiles/cmTC_a8697.dir/HAVE_WINDOWS_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_a8697.dir/HAVE_WINDOWS_H.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c:2:10: fatal error: 'windows.h' file not found
+#include <windows.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_a8697.dir/HAVE_WINDOWS_H.c.o] Error 1
+make[3]: *** [cmTC_a8697/fast] Error 2
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_TYPE_SOCKET failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49c2a/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_49c2a.dir/build.make CMakeFiles/cmTC_49c2a.dir/build
+Building C object CMakeFiles/cmTC_49c2a.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE  -DHAVE_TYPE_SOCKET   -o CMakeFiles/cmTC_49c2a.dir/src.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/src.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/src.c:26:4: error: use of undeclared identifier 'SOCKET'
+                        SOCKET var_exists;
+                        ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_49c2a.dir/src.c.o] Error 1
+make[3]: *** [cmTC_49c2a/fast] Error 2
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			SOCKET var_exists;
+			return 0;
+		}
+	
+Determining if the MSG_NOSIGNAL exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e5467/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_e5467.dir/build.make CMakeFiles/cmTC_e5467.dir/build
+Building C object CMakeFiles/cmTC_e5467.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_e5467.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'MSG_NOSIGNAL'
+  return ((int*)(&MSG_NOSIGNAL))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_e5467.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_e5467/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef MSG_NOSIGNAL
+  return ((int*)(&MSG_NOSIGNAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SO_NONBLOCK exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4fd33/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4fd33.dir/build.make CMakeFiles/cmTC_4fd33.dir/build
+Building C object CMakeFiles/cmTC_4fd33.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_4fd33.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'SO_NONBLOCK'
+  return ((int*)(&SO_NONBLOCK))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_4fd33.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_4fd33/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SO_NONBLOCK
+  return ((int*)(&SO_NONBLOCK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the bitncmp exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4811e/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4811e.dir/build.make CMakeFiles/cmTC_4811e.dir/build
+Building C object CMakeFiles/cmTC_4811e.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_4811e.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'bitncmp'
+  return ((int*)(&bitncmp))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_4811e.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_4811e/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef bitncmp
+  return ((int*)(&bitncmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the closesocket exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9d8bf/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_9d8bf.dir/build.make CMakeFiles/cmTC_9d8bf.dir/build
+Building C object CMakeFiles/cmTC_9d8bf.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_9d8bf.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'closesocket'
+  return ((int*)(&closesocket))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_9d8bf.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_9d8bf/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CloseSocket exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_815d1/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_815d1.dir/build.make CMakeFiles/cmTC_815d1.dir/build
+Building C object CMakeFiles/cmTC_815d1.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_815d1.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'CloseSocket'
+  return ((int*)(&CloseSocket))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_815d1.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_815d1/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CloseSocket
+  return ((int*)(&CloseSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getservbyport_r exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1dd45/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_1dd45.dir/build.make CMakeFiles/cmTC_1dd45.dir/build
+Building C object CMakeFiles/cmTC_1dd45.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_1dd45.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'getservbyport_r'; did you mean 'getservbyport'?
+  return ((int*)(&getservbyport_r))[argc];
+                  ^~~~~~~~~~~~~~~
+                  getservbyport
+/usr/include/netdb.h:287:17: note: 'getservbyport' declared here
+struct servent  *getservbyport(int, const char *);
+                 ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_1dd45.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_1dd45/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getservbyport_r
+  return ((int*)(&getservbyport_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the ioctlsocket exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_285aa/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_285aa.dir/build.make CMakeFiles/cmTC_285aa.dir/build
+Building C object CMakeFiles/cmTC_285aa.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_285aa.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'ioctlsocket'
+  return ((int*)(&ioctlsocket))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_285aa.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_285aa/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctlsocket
+  return ((int*)(&ioctlsocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IoctlSocket exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f658c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f658c.dir/build.make CMakeFiles/cmTC_f658c.dir/build
+Building C object CMakeFiles/cmTC_f658c.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_f658c.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'IoctlSocket'
+  return ((int*)(&IoctlSocket))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_f658c.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_f658c/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IoctlSocket
+  return ((int*)(&IoctlSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fa94/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_1fa94.dir/build.make CMakeFiles/cmTC_1fa94.dir/build
+Building C object CMakeFiles/cmTC_1fa94.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_1fa94.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'strcmpi'; did you mean 'strcmp'?
+  return ((int*)(&strcmpi))[argc];
+                  ^~~~~~~
+                  strcmp
+/usr/include/string.h:77:6: note: 'strcmp' declared here
+int      strcmp(const char *__s1, const char *__s2);
+         ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_1fa94.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_1fa94/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4c10f/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4c10f.dir/build.make CMakeFiles/cmTC_4c10f.dir/build
+Building C object CMakeFiles/cmTC_4c10f.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_4c10f.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'stricmp'
+  return ((int*)(&stricmp))[argc];
+                  ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_4c10f.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_4c10f/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strncmpi exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d1a1b/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_d1a1b.dir/build.make CMakeFiles/cmTC_d1a1b.dir/build
+Building C object CMakeFiles/cmTC_d1a1b.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_d1a1b.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'strncmpi'; did you mean 'strncmp'?
+  return ((int*)(&strncmpi))[argc];
+                  ^~~~~~~~
+                  strncmp
+/usr/include/string.h:84:6: note: 'strncmp' declared here
+int      strncmp(const char *__s1, const char *__s2, size_t __n);
+         ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_d1a1b.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_d1a1b/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strnicmp exist failed with the following output:
+Change Dir: /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f275/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_5f275.dir/build.make CMakeFiles/cmTC_5f275.dir/build
+Building C object CMakeFiles/cmTC_5f275.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -D_DARWIN_C_SOURCE   -o CMakeFiles/cmTC_5f275.dir/CheckSymbolExists.c.o   -c /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'strnicmp'; did you mean 'strncmp'?
+  return ((int*)(&strnicmp))[argc];
+                  ^~~~~~~~
+                  strncmp
+/usr/include/string.h:84:6: note: 'strncmp' declared here
+int      strncmp(const char *__s1, const char *__s2, size_t __n);
+         ^
+1 error generated.
+make[4]: *** [CMakeFiles/cmTC_5f275.dir/CheckSymbolExists.c.o] Error 1
+make[3]: *** [cmTC_5f275/fast] Error 2
+
+File /Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/src/c-ares-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strnicmp
+  return ((int*)(&strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

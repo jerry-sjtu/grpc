@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/Users/qiangwang/homebrew/opt/llvm/lib CMakeFiles/protoc.dir/Users/qiangwang/workspace/grpc/third_party/protobuf/src/google/protobuf/compiler/main.cc.o  -o protoc libprotobuf.a libprotoc.a libprotobuf.a 

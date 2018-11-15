@@ -1,0 +1,11 @@
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/rebuild_cache.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/edit_cache.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/zlibstatic.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/example.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/list_install_components.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/minigzip.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/install/local.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/test.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/install/strip.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/install.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/zlib/src/zlib-build/CMakeFiles/zlib.dir

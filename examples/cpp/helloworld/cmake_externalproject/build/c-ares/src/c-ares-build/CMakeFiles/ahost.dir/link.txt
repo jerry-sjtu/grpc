@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc  -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/Users/qiangwang/homebrew/opt/llvm/lib CMakeFiles/ahost.dir/ahost.c.o CMakeFiles/ahost.dir/ares_getopt.c.o CMakeFiles/ahost.dir/ares_nowarn.c.o CMakeFiles/ahost.dir/ares_strcasecmp.c.o  -o bin/ahost lib/libcares.a -lresolv 

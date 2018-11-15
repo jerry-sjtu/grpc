@@ -1,0 +1,12 @@
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/lib/libcares.a
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/include/ares.h
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/include/ares_version.h
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/include/ares_dns.h
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/include/ares_build.h
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/include/ares_rules.h
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/lib/cmake/c-ares/c-ares-targets.cmake
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/lib/cmake/c-ares/c-ares-targets-noconfig.cmake
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/lib/cmake/c-ares/c-ares-config.cmake
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/bin/ahost
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/bin/adig
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/c-ares/bin/acountry

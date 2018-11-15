@@ -1,0 +1,7 @@
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/rebuild_cache.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/edit_cache.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/c-ares.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/helloworld.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/grpc.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/zlib.dir
+/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/protobuf.dir

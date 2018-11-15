@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/grpc"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/grpc.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/CMakeFiles/grpc-complete.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/grpc/src/grpc-stamp/grpc-install.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/grpc/src/grpc-stamp/grpc-mkdir.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/grpc/src/grpc-stamp/grpc-download.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/grpc/src/grpc-stamp/grpc-update.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/grpc/src/grpc-stamp/grpc-patch.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/grpc/src/grpc-stamp/grpc-configure.rule"
+		},
+		{
+			"file" : "/Users/qiangwang/workspace/grpc/examples/cpp/helloworld/cmake_externalproject/build/grpc/src/grpc-stamp/grpc-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"grpc"
+		],
+		"name" : "grpc"
+	}
+}
