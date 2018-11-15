@@ -22,6 +22,8 @@
 
 cmake_minimum_required(VERSION 2.8)
 
+#SET(CMAKE_CXX_COMPILER "/Users/qiangwang/homebrew/Cellar/gcc/8.2.0/bin/g++-8")
+
 # Project
 project(HelloWorld-SuperBuild C CXX)
 

@@ -16,18 +16,21 @@
  *
  */
 
+//<>表示从系统目录下开始搜索，然后再搜索PATH环境变量所列出的目录，不搜索当前目录。
 #include <iostream>
 #include <memory>
 #include <string>
 
 #include <grpcpp/grpcpp.h>
 
+//""是表示从当前目录开始搜索，然后是系统目录和PATH环境变量所列出的目录。
 #ifdef BAZEL_BUILD
 #include "examples/protos/helloworld.grpc.pb.h"
 #else
 #include "helloworld.grpc.pb.h"
 #endif
 
+//using关键字最常用的，可能就是导入命名空间;改变访问权限;
 using grpc::Server;
 using grpc::ServerBuilder;
 using grpc::ServerContext;
@@ -37,6 +40,8 @@ using helloworld::HelloReply;
 using helloworld::Greeter;
 
 // Logic and data behind the server's behavior.
+//公有继承（public）：当一个类派生自公有基类时，基类的公有成员也是派生类的公有成员，
+//基类的保护成员也是派生类的保护成员，基类的私有成员不能直接被派生类访问，但是可以通过调用基类的公有和保护成员来访问。
 class GreeterServiceImpl final : public Greeter::Service {
   Status SayHello(ServerContext* context, const HelloRequest* request,
                   HelloReply* reply) override {
@@ -44,7 +49,16 @@ class GreeterServiceImpl final : public Greeter::Service {
     reply->set_message(prefix + request->name());
     return Status::OK;
   }
+
+  Status SayHelloAgain(ServerContext* context, const HelloRequest* request,
+                         HelloReply* reply) override {
+        std::string prefix("Hello again ");
+        std::string p = "ff";
+        reply->set_message(prefix + request->name());
+        return Status::OK;
+  }
 };
+
 
 void RunServer() {
   std::string server_address("0.0.0.0:50051");

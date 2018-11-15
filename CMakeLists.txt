@@ -685,7 +685,7 @@ add_library(address_sorting
   third_party/address_sorting/address_sorting.c
   third_party/address_sorting/address_sorting_posix.c
   third_party/address_sorting/address_sorting_windows.c
-)
+        examples/cpp/helloworld/vector_search.cpp examples/cpp/helloworld/flat_vector.cpp)
 
 if(WIN32 AND MSVC)
   set_target_properties(address_sorting PROPERTIES COMPILE_PDB_NAME "address_sorting"

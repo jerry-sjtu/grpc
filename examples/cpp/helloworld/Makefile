@@ -16,17 +16,17 @@
 
 HOST_SYSTEM = $(shell uname | cut -f 1 -d_)
 SYSTEM ?= $(HOST_SYSTEM)
-CXX = g++
+CXX = /usr/local/Cellar/gcc/8.2.0/bin/g++-8
 CPPFLAGS += `pkg-config --cflags protobuf grpc`
 CXXFLAGS += -std=c++11
 ifeq ($(SYSTEM),Darwin)
 LDFLAGS += -L/usr/local/lib `pkg-config --libs protobuf grpc++ grpc`\
            -lgrpc++_reflection\
-           -ldl
+           -ldl -lfaiss
 else
 LDFLAGS += -L/usr/local/lib `pkg-config --libs protobuf grpc++ grpc`\
            -Wl,--no-as-needed -lgrpc++_reflection -Wl,--as-needed\
-           -ldl
+           -ldl -lfaiss
 endif
 PROTOC = protoc
 GRPC_CPP_PLUGIN = grpc_cpp_plugin
@@ -36,7 +36,7 @@ PROTOS_PATH = ../../protos
 
 vpath %.proto $(PROTOS_PATH)
 
-all: system-check greeter_client greeter_server greeter_async_client greeter_async_client2 greeter_async_server
+all: system-check greeter_client greeter_server greeter_async_client greeter_async_client2 greeter_async_server vector_search flat_vector
 
 greeter_client: helloworld.pb.o helloworld.grpc.pb.o greeter_client.o
 	$(CXX) $^ $(LDFLAGS) -o $@
